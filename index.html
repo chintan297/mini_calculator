@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="calc">
+      <div class="row1">
+        <input class="screen" type="text" placeholder="0" id="inp" />
+      </div>
+      <div class="row2">
+        <button class="c1 column" id="clear" onclick="cls()">C</button>
+        <button class="c2 column" id="plus_minus" onclick="AT_add('+/-')">
+          ±
+        </button>
+        <button class="c3 column" id="moduloSign" onclick="AT_add('%')">
+          %
+        </button>
+        <button class="c4 column" id="divisionSign" onclick="AT_add('/')">
+          ÷
+        </button>
+      </div>
+      <div class="row3">
+        <button class="c5 column" id="seven" onclick="AT_add('7')">7</button>
+        <button class="c6 column" id="eight" onclick="AT_add('8')">8</button>
+        <button class="c7 column" id="nine" onclick="AT_add('9')">9</button>
+        <button class="c8 column" id="crossSign" onclick="AT_add('*')">✕</button>
+      </div>
+      <div class="row4">
+        <button class="c9 column" onclick="AT_add('4')" id="four">4</button>
+        <button class="c10 column" onclick="AT_add('5')" id="five">5</button>
+        <button class="c11 column" onclick="AT_add('6')" id="six">6</button>
+        <button class="c12 column" onclick="AT_add('-')" id="minusSign">
+          -
+        </button>
+      </div>
+      <div class="row5">
+        <button class="c13 column" id="one" onclick="AT_add('1')">1</button>
+        <button class="c14 column" id="two" onclick="AT_add('2')">2</button>
+        <button class="c15 column" id="three" onclick="AT_add('3')">3</button>
+        <button class="c16 column" id="plusSign" onclick="AT_add('+')">
+          +
+        </button>
+      </div>
+      <div class="row6">
+        <button class="c17 column" id="zero" onclick="AT_add('0')" value="0">
+          0
+        </button>
+        <button class="c18 column" id="dot" onclick="AT_add('.')" value=".">
+          .
+        </button>
+        <button class="c19 column" id="equalTo" onclick="exe()" value="=">
+          =
+        </button>
+      </div>
+    </div>
+    <h1 class="res">Itna bhi chhota nhi hota calculator</h1>
+  </body>
+</html>
